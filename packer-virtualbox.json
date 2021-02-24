@@ -15,6 +15,7 @@
     "vagrantcloud_base_image": "https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04-docker/versions/{{user `src_image_version`}}",
     "application_info": "https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/{{user `image_version`}}/installed-application.md",
 
+    "vagrant_hostname": "app.vagrantup.com",
     "packer_build_dir": "packer_build_dir",
     "box_namespace": "elegoev",
     "box_name": "{{user `image_name`}}",
