@@ -4,7 +4,7 @@ Vagrant Box with Ubuntu 18.04 and rancherd
 
 ## Base image
 
-Used base image [elegoev/ubuntu-18.04-docker](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04-docker)
+Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/ubuntu-18.04)
 
 ## Directory Description
 
@@ -83,12 +83,12 @@ Repository follows sematic versioning  [![semantic versioning](https://img.shiel
 
 ### Changelog
 
-For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04-rancher/blob/master/CHANGELOG.md)
+For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/master/CHANGELOG.md)
 
 ### License
 
-Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04-rancher/blob/master/LICENSE) file.
+Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/master/LICENSE) file.
 
 ### Issue Reporting
 
-Any and all feedback is welcome.  Please let me know of any issues you may find in the bug tracker on github. You can find it [here.](https://github.com/elegoev/basebox-ubuntu-18.04-rancher/issues)
+Any and all feedback is welcome.  Please let me know of any issues you may find in the bug tracker on github. You can find it [here.](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/issues)
