@@ -88,11 +88,11 @@ Repository follows sematic versioning  [![semantic versioning](https://img.shiel
 
 ## Changelog
 
-For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/master/CHANGELOG.md)
+For all notable changes see [CHANGELOG](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/main/CHANGELOG.md)
 
 ## License
 
-Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/master/LICENSE) file.
+Licensed under The MIT License (MIT) - for the full copyright and license information, please view the [LICENSE](https://github.com/elegoev/basebox-ubuntu-18.04-rancherd/blob/main/LICENSE) file.
 
 ## Issue Reporting
 
