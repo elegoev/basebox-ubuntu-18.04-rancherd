@@ -1,7 +1,7 @@
 {
   "variables": {
-    "src_image_name": "elegoev/ubuntu-18.04",
-    "src_image_version": "2.0.1609256225",
+    "src_image_name": "{{ env `SRC_IMAGE_NAME` }}",
+    "src_image_version": "{{ env `SRC_IMAGE_VERSION` }}",
     "image_name": "ubuntu-18.04-rancherd",
     "image_version": "1.0.{{timestamp}}",
     "cloud_token": "{{ env `PACKER_VAGRANTCLOUD_TOKEN` }}",
@@ -42,11 +42,6 @@
   ],
   "provisioners": [
     {
-      "type": "file",
-      "source": "./packer/files-prov",
-      "destination": "/home/vagrant/files-prov"
-    },
-    {
       "type": "shell",
       "execute_command": "sudo -S sh -c '{{ .Vars }} {{ .Path }}'",
       "script": "./packer/provisioners/base-provisioning.sh"
@@ -59,6 +54,16 @@
     }
   ],
   "post-processors": [
+    {
+      "type": "shell-local",
+      "environment_vars": [
+        "IMAGE_NAME={{user `image_name`}}",
+        "IMAGE_VERSION={{user `image_version`}}"
+       ],
+      "execute_command": ["powershell.exe", "{{.Vars}} {{.Script}}"],
+      "env_var_format": "$env:%s=\"%s\"; ",
+      "script": "./packer/post-processors/set-environment.ps1"  
+    },
     {
       "type": "shell-local",
       "environment_vars": ["IMAGE_VERSION={{user `image_version`}}"],
