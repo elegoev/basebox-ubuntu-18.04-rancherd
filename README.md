@@ -50,7 +50,10 @@ Used base image [elegoev/ubuntu-18.04](https://app.vagrantup.com/elegoev/boxes/u
           vb.customize ["modifyvm", :id, "--memory", "4096" ]
           vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
           vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-          vb.customize ["modifyvm", :id, "--uartmode1", "disconnected" ]
+          vb.customize [
+            "modifyvm", :id, "--uartmode1", "file",
+            File.join(Dir.pwd, "ubuntu-bionic-18.04-cloudimg-console.log")
+          ]
           vb.customize ["modifyvm", :id, "--groups", "/#{$vb_group_name}" ]
           vb.customize ["modifyvm", :id, "--vram", 256 ]
         end
